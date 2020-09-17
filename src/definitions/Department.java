@@ -28,4 +28,17 @@ public class Department {
         numberOfEmployees++;
     }
 
+    /**
+     * This method adds an employee to the Department.
+     *
+     * @param employee An employee with Name, Identification Number and Salary.
+     */
+    public void addEmployee(Employee employee){
+        if (getNumberOfEmployees() <= 10) {
+            allEmployeesInDepartment[numberOfEmployees] = employee;
+            incrementNumberOfEmployees();
+        } else {
+            System.out.println("NO MORE EMPLOYEES CAN BE ADDED. Department Capacity Is Full.");
+        }
+    }
 }
