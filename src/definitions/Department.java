@@ -8,4 +8,16 @@ public class Department {
     public Department(String departmentName) {
         this.departmentName = departmentName;
     }
+
+    public int getNumberOfEmployees() {
+        return numberOfEmployees;
+    }
+
+    public String getDepartmentName() {
+        return departmentName;
+    }
+
+    public void setDepartmentName(String departmentName) {
+        this.departmentName = departmentName;
+    }
 }
