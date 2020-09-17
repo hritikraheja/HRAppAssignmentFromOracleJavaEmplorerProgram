@@ -50,4 +50,15 @@ public class Department {
             System.out.println(allEmployeesInDepartment[employeeNumber].toString());
         }
     }
+
+    /**
+     * This method returns the sum of salaries given to all Employees in this Department.
+     */
+    public double getTotalSalary(){
+        int totalSalary = 0;
+        for (int employeeNumber = 0; employeeNumber < numberOfEmployees; employeeNumber++) {
+            totalSalary += allEmployeesInDepartment[employeeNumber].getSalary();
+        }
+        return totalSalary;
+    }
 }
