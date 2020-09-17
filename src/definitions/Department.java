@@ -68,4 +68,9 @@ public class Department {
     public double getAverageSalary() {
         return getTotalSalary()/numberOfEmployees;
     }
+
+    @Override
+    public String toString() {
+        return "Department : " + departmentName + " Department";
+    }
 }
