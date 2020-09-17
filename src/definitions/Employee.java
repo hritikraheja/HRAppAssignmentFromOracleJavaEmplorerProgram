@@ -19,4 +19,13 @@ public class Employee {
         this.name = name;
         this.salary = salary;
     }
+
+    public int getIdentificationNumber() {
+        return identificationNumber;
+    }
+
+    public void setIdentificationNumber(int identificationNumber) {
+        this.identificationNumber = identificationNumber;
+    }
+
 }
