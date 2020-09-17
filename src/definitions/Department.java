@@ -41,4 +41,13 @@ public class Department {
             System.out.println("NO MORE EMPLOYEES CAN BE ADDED. Department Capacity Is Full.");
         }
     }
+
+    /**
+     * This method prints the details of all Employees working in this Department.
+     */
+    public void printDetailsOfEmployees() {
+        for (int employeeNumber = 0; employeeNumber < numberOfEmployees; employeeNumber++) {
+            System.out.println(allEmployeesInDepartment[employeeNumber].toString());
+        }
+    }
 }
