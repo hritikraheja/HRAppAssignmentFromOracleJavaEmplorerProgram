@@ -20,4 +20,12 @@ public class Department {
     public void setDepartmentName(String departmentName) {
         this.departmentName = departmentName;
     }
+
+    /**
+     * This method increments the Number Of Employees working in the Department by 1.
+     */
+    private void incrementNumberOfEmployees() {
+        numberOfEmployees++;
+    }
+
 }
