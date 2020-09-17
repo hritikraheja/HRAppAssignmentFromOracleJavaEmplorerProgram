@@ -61,4 +61,11 @@ public class Department {
         }
         return totalSalary;
     }
+
+    /**
+     * This method returns the average of salaries given to all Employees in this Department.
+     */
+    public double getAverageSalary() {
+        return getTotalSalary()/numberOfEmployees;
+    }
 }
